@@ -171,7 +171,7 @@ body{
 }
 @media all and (min-width: 768px){
 	.boton1 {
-	margin: 50px 0 50px 0;
+	margin: 0px 0 50px 0;
 	align-self: flex-start;
   	}
 }
@@ -254,7 +254,49 @@ body{
 }
 @media all and (min-width: 768px){
 	.boton2 {
-	margin: 50px 0 50px 0;
+	margin: 0px 0 50px 0;
 	align-self: flex-end;
   	}
+}
+
+/*----------ESTILOS DE LA INFORMACION DE LA EMPRESA----------*/
+
+#infoprin{
+	width: 100%;
+	height: 90px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas: ". sl ." 
+						 ". b1 .";
+	align-items: center;
+}
+
+.slogan {
+	grid-area: sl;
+	margin: 2%;
+	padding: 2%;
+}
+.slogan p {
+	padding: 0 10% 0 10%;
+	color: #E6213D;
+	font-size: 3rem;
+	font-weight: 800;
+	text-align: center;
+}
+@media all and (min-width: 768px){
+	.slogan p {
+	padding: 0 20% 0 20%;
+	}
+}
+.box1 {
+	grid-area: b1;
+}
+.box1 p{
+	padding: 0 5% 0 5%;
+	text-align: justify;
+}
+@media all and (min-width: 768px){
+	.box1 p{
+	padding: 0 15% 0 15%;
+	}
 }
