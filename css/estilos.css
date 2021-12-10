@@ -373,3 +373,150 @@ body{
 	font-size: 1rem;
 	}
 }
+
+/*----------ESTILOS DEL FOOTER----------*/
+
+#footer {
+	width: 100%;
+	color: #fff;
+	margin: 3% 0 0 0;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas: 	"tc "
+							"dt "
+							"mp "
+							"cr "
+							"rd ";
+	
+}
+@media all and (min-width: 768px){
+	#footer {
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 	"tc mp"
+							"dt mp"
+							"dt mp"
+							"cr rd";
+	}
+							
+}
+
+.tituloC{
+	grid-area: tc;
+	background-color: #4B4B4D;
+	font-size: 1.5rem;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 800;
+
+}
+
+.datos{
+	grid-area: dt;
+	background-color: #4B4B4D;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	text-align: center;
+	padding: 0 0 3% 0;
+}
+@media all and (min-width: 768px){
+	.datos{
+	padding: 0 0 0 0;
+	}
+}
+.datos .direccion {
+	width: 30%;
+	font-size: 0.8rem;
+}
+@media all and (min-width: 768px){
+	.datos .direccion {
+	font-size: 1rem;
+	}
+}
+
+.direccion img{
+	height: 100px;
+}
+@media all and (min-width: 768px){
+	.direccion img{
+	height: 118px;
+    }
+}
+
+.datos .email {
+	width: 30%;
+	font-size: 0.8rem;
+}
+@media all and (min-width: 768px){
+	.datos .email {
+	font-size: 1rem;
+	}
+}	
+
+.email img{
+	height: 100px;
+}
+@media all and (min-width: 768px){
+	.email img{
+	height: 118px;
+    }
+}
+
+.datos .telefono {
+	width: 30%;
+	font-size: 0.8rem;
+}
+@media all and (min-width: 768px){
+	.datos .telefono {
+	font-size: 1rem;
+	}
+}
+
+.telefono img{
+	height: 100px;
+}
+@media all and (min-width: 768px){
+	.telefono img{
+	height: 118px;
+    }
+}
+
+.mapa{
+	grid-area: mp;
+	width: 100%;
+}
+
+.copyR{
+	grid-area: cr;
+	background-color: #E94660;
+	width: 100%;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.8rem;
+}
+
+.Redes{
+	grid-area: rd;
+	background-color: #E94660;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+@media all and (min-width: 768px){
+	.Redes{
+	justify-content: end;
+}
+}
+
+.Redes img {
+	width: 30px;
+	height: 30px;
+	margin: 0 10px;
+}
