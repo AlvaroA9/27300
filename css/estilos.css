@@ -263,7 +263,6 @@ body{
 
 #infoprin{
 	width: 100%;
-	height: 90px;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-areas: ". sl ." 
@@ -298,5 +297,75 @@ body{
 @media all and (min-width: 768px){
 	.box1 p{
 	padding: 0 15% 0 15%;
+	}
+}
+
+/*----------ESTILOS DEL MOSTRARIO DE PRODUCTOS----------*/
+
+#mostrario {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr ;
+	grid-template-areas: "tlm" 
+						"r";
+						 
+}
+#mostrario .tituloM {
+	grid-area: tlm;
+	font-size: 1.5rem;
+	font-weight: 800;
+	color: #4D4D4D;
+	padding: 3% 0 3% 3%;
+}
+@media all and (min-width: 768px){
+	#mostrario .tituloM {
+	font-size: 2rem;
+	}
+}
+
+#mostrario .RMA {
+	grid-area: r;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 0 3% 0% 3%;
+
+}
+
+.producto1 {
+	width: 128px;
+	display: grid;
+	grid-template-columns: 1fr ;
+	grid-template-areas: "ft" 
+						"des";
+	justify-items: center;
+}
+@media all and (min-width: 768px){
+	.producto1 {
+	width: 228px;
+	}
+}
+
+.fotoProd{
+	grid-area: ft;
+	width: 128px;
+	height: 128px;
+}
+@media all and (min-width: 768px){
+	.fotoProd{
+	width: 228px;
+	height: 228px;
+	}
+}
+
+.descripcion{
+	grid-area: des;
+	text-align: center;
+	font-size: 0.8rem;
+}
+@media all and (min-width: 768px){
+	.descripcion{
+	font-size: 1rem;
 	}
 }
