@@ -70,6 +70,10 @@ body{
 	font-weight: 600;
 	text-decoration: none;
 }
+#header .nav a{
+	color: #fff;
+	text-decoration: none;
+}
 
 /*----------ESTILOS DEL LOGO DE CARRITO DE COMPRAS----------*/
 .logoDeCompras{
