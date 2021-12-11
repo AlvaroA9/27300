@@ -16,6 +16,7 @@ body{
 /*----------ESTILOS DE LA CABECERA----------*/
 #header{
 	position: sticky;
+	z-index: 1000;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -334,6 +335,11 @@ body{
 	flex-direction: row;
 	justify-content: space-around;
 	padding: 0 3% 0% 3%;
+	
+}
+
+.scale:hover {
+	transform: scale(1.1);
 
 }
 
@@ -344,12 +350,14 @@ body{
 	grid-template-areas: "ft" 
 						"des";
 	justify-items: center;
+	transition: all 250ms ease-in-out;
 }
 @media all and (min-width: 768px){
 	.producto1 {
 	width: 228px;
 	}
 }
+
 
 .fotoProd{
 	grid-area: ft;
@@ -581,6 +589,7 @@ body{
 	grid-area: ib1;
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 
 }
 .infob1 .imgb1 {
@@ -631,7 +640,8 @@ body{
 	grid-area: ib4;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;	
+	justify-content: center;
+
 }
 
 .infob4 .imgb4 {

@@ -5,13 +5,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Proyecto Coder House</title>
 	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
 <!--INICIO DE LA CABECERA-->	
 	<div id="header">
 	<!--Logotipo de la pagina-->
-		<div class="logoDePagina">
-			<img src="../assets/logouninet1.png" alt="logoUninet">
+		<div class="logoDePagina animate__animated animate__fadeInDown">
+			<a href="../index.html"><img src="../assets/logouninet1.png" alt="logoUninet"></a>
 		</div>	
 	<!--Menu de la pagina-->		
 		<div class="menu">
@@ -71,6 +75,9 @@
 
 	</div>
 <!--CIERRE DE FOOTER-->
-
+	<script src="./js/wow.js"></script>
+    <script>
+    new WOW().init();
+    </script>
 </body>
 </html>
