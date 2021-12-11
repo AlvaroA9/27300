@@ -520,3 +520,146 @@ body{
 	height: 30px;
 	margin: 0 10px;
 }
+
+
+/*-----------------PAGINA BLOG-----------------*/
+/*-----------------PAGINA BLOG-----------------*/
+/*-----------------PAGINA BLOG-----------------*/
+
+/*INICIO DE PORTADA*/
+.portada{
+	height: 10vh;
+	background-image: url('../assets/portadaBlog.jpg');
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+@media all and (min-width: 1200px){
+	.portada{
+	height: 40vh;
+	}
+}
+
+.portada .titulodeP {
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: #fff;
+}
+/*CIERRE DE PORTADA*/
+
+/*INICIO DE BLOG*/
+.contenedor {
+	display: flex;
+	justify-content: center;
+}
+
+#blog {
+	width: 95%;
+	display: grid;
+	margin: 1rem;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-areas: 	"ib4 ib4"
+							"ib1 ib1"
+							"ib2 ib3";
+
+	grid-column-gap: 1rem;
+	grid-row-gap: 1rem;
+}
+
+@media all and (min-width: 768px){
+	#blog {
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-areas: 	"ib1 ib1 ib4 ib4"
+							"ib2 ib3 ib4 ib4";
+	}
+}
+
+.infob1 {
+	grid-area: ib1;
+	display: flex;
+	flex-direction: row;
+
+}
+.infob1 .imgb1 {
+	width: 50%;
+	display: flex;
+	align-self: center;
+	justify-content: center;
+}
+.imgb1 img {
+	width: 100%;
+}
+.infob1 .texb1 {
+	width: 50%;
+	display: flex;
+	align-self: center;
+	font-size: 0.6rem;
+}
+@media all and (min-width: 1200px){
+	.infob1 .texb1 {
+	font-size: 0.8rem;
+	}
+}
+.texb1 p {
+	padding: 10%;
+	text-align: justify;
+}
+
+
+.infob2 {
+	grid-area: ib2;
+	align-self: center;
+}	
+.infob2 img{
+	width: 100%;
+}
+		
+
+.infob3 {
+	grid-area: ib3;
+	align-self: center;
+}
+.infob3 img{
+	width: 100%;
+}
+
+
+.infob4 {
+	grid-area: ib4;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;	
+}
+
+.infob4 .imgb4 {
+	display: flex;
+	justify-content: center;
+}
+.imgb4 img {
+	width: 100%;
+}
+@media all and (min-width: 768px){
+	.imgb4 img {
+	width: 75%;
+  	}
+}
+
+.infob4 .texb4 {
+	padding: 5% 2% 2% 2%;
+	height: 10%;
+	display: flex;
+	font-size: 0.7rem;
+}
+@media all and (min-width: 768px){
+	.infob4 .texb4 {
+	padding: 5% 10% 2% 10%;
+	}
+}
+@media all and (min-width: 1200px){
+	.infob4 .texb4 {
+	font-size: 0.8rem;
+	}
+}
